@@ -8,7 +8,8 @@ from langchain_openai import ChatOpenAI
 import os
 
 # Set your OpenRouter API key
-os.environ["OPENROUTER_API_KEY"] = "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"
+OPENROUTER_API_KEY = st.secrets['api_key']
+#os.environ["OPENROUTER_API_KEY"] = "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"
 
 # Custom wrapper for OpenRouter
 class ChatOpenRouter(ChatOpenAI):
